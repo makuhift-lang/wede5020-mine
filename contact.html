@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Sentinel SCSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--header-->
+    <header class="main-header">
+        <div class="logo">Sentinel <span>SCSS</span></div>
+        <!--contact information-->
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="Resource.html">Resource</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--Main-->
+    <main class="contact-section">
+        <div class="container">
+            <h1>Contact Our Team</h1>
+            <p>Have a question about our infrastructure protection? Send us a message below.</p>
+
+            <form action="#" method="post" class="simple-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <!--contact details-->
+            <div class="contact-details">
+                <p><strong>Email:</strong> info@sentinelscss.com</p>
+                <p><strong>Phone:</strong> 0760429165</p>
+                <p><strong>adress:</strong>24 hahan street.joburg</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
