@@ -1,0 +1,552 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background: #0a192f;
+    color: #fff;
+    padding: 1rem 5%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo span {
+    color: #64ffda; /* Teal accent */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li a {
+    color: #ccd6f6;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    color: #64ffda;
+}
+
+/* Image Row */
+.image-row {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-row img {
+    border-radius: 8px;
+    border: 2px solid #64ffda;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
+                url('https://unsplash.com');
+    background-size: cover;
+    color: white;
+    padding: 100px 5%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+}
+
+.btn-primary {
+    background: #64ffda;
+    color: #0a192f;
+}
+
+.btn-secondary {
+    border: 2px solid #64ffda;
+    color: #64ffda;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Services Section */
+#Services {
+    padding: 80px 5%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    background: white;
+}
+
+.service.box, #Services > div > div {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    border-bottom: 4px solid #0a192f;
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 15px;
+    color: #0a192f;
+}
+
+/* Container to keep content centered */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Nav layout fix */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Fix the Image Row inside the nav */
+.image-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.image-row img {
+    border-radius: 5px;
+    object-fit: cover;
+    height: 150px; /* Uniform height for the thumbnails */
+}
+
+/* Hero Content Styling */
+.hero-content {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-btns {
+    margin-top: 25px;
+}
+
+/* Services Layout - Side by Side */
+#Services > div {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+#Services div div, .service.box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    flex: 1; /* Makes both boxes equal width */
+    transition: transform 0.3s ease;
+}
+
+#Services div div:hover {
+    transform: translateY(-10px);
+}
+
+/* Link Styling */
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Button Colors */
+.btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+/* 1. Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #0d1117; /* Cyber Dark Background */
+    color: #c9d1d9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 2. Navigation & Logo */
+header {
+    background: rgba(13, 17, 23, 0.95);
+    border-bottom: 1px solid #30363d;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #58a6ff; /* Sentinel Blue */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 15px 0;
+}
+
+nav a {
+    color: #8b949e;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #58a6ff;
+}
+
+/* 3. Navigation Images Row */
+.image-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-row img {
+    border-radius: 4px;
+    border: 1px solid #30363d;
+}
+
+/* 4. Hero Section */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    background: radial-gradient(circle at center, #161b22 0%, #0d1117 100%);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.btn-primary {
+    background-color: #238636;
+    color: #fff;
+}
+
+.btn-secondary {
+    border: 1px solid #30363d;
+    color: #fff;
+    background: #21262d;
+}
+
+/* 5. Services Grid */
+#Services > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two side-by-side boxes */
+    gap: 30px;
+    padding: 80px 0;
+}
+
+#Services div div, .service.box {
+    background: #161b22;
+    padding: 40px;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    text-align: left;
+    transition: border-color 0.3s;
+}
+
+#Services div div:hover {
+    border-color: #58a6ff;
+}
+
+#Services h3 {
+    color: #58a6ff;
+    margin-bottom: 15px;
+}
+
+/* 6. Mobile Responsiveness */
+@media (max-width: 768px) {
+    #Services > div {
+        grid-template-columns: 1fr; /* Stack boxes on small screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Specific Styles for Resource Page */
+.resource-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.resource-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.resource-intro h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* The Grid Layout */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Individual Cards */
+.resource-card {
+    background: #161b22;
+    padding: 30px;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Tags (Whitepaper, Guide, etc) */
+.tag {
+    background: rgba(88, 166, 255, 0.1);
+    color: #58a6ff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 20px;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+.resource-card h3 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.resource-card p {
+    color: #8b949e;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Pushes the link to the bottom */
+}
+
+/* Links */
+.read-more {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Active Link in Nav */
+.nav-menu a.active {
+    color: #58a6ff;
+    border-bottom: 2px solid #58a6ff;
+    padding-bottom: 5px;
+}
+
+/* Service Page Specific Styles */
+.service-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.service-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.service-intro h1 {
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Service Grid Layout */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+/* Individual Service Cards */
+.service-card {
+    background: #161b22;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #30363d;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    border-color: #238636; /* Success green border */
+    background: #1c2128;
+    transform: translateY(-8px);
+}
+
+.service-card .icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    color: #8b949e;
+    line-height: 1.7;
+}
+
+/* Call to Action (CTA) Section */
+.service-cta {
+    background: linear-gradient(90deg, #161b22 0%, #0d1117 100%);
+    padding: 60px;
+    border-radius: 20px;
+    border: 1px solid #30363d;
+    text-align: center;
+}
+
+.service-cta h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.service-cta p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* Consultation Button */
+.btn-consult {
+    background-color: #238636;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-consult:hover {
+    background-color: #2ea043;
+}
